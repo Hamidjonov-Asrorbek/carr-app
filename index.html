@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car LIST</title>
+    <!-- BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="my-5 text-center">
+      <!-- <h4 id="full-day"></h4>
+      <div class="time-container">
+        <span id="title_time"></span>
+      </div> -->
+      <h2 class="display-2 text-primary">
+        Car List
+      </h2>
+
+    </header>
+    <main>
+      <form id="form-create" class="container mb-3">
+        <div class="mb-3">
+          <!-- car name -->
+          <h4>Car name</h4>
+          <input
+            id="carName"
+            type="text"
+            class="mb-1 form-control"
+            placeholder="Car name"
+            autocomplete="off"
+            required
+            />
+            <span id="message-create" class="text-danger d-block"></span>
+            <!-- speed -->
+          <h4>Speed</h4>
+          <input
+            id="speed"
+            type="number"
+            class="mb-1 form-control"
+            placeholder="Speed"
+            autocomplete="off"
+            required
+            />
+            <span id="message-create-speed" class="text-danger d-block"></span>
+          <!-- price -->
+          <h4>Price ($)</h4>
+          <input
+            id="price"
+            type="number"
+            class="mb-1 form-control"
+            placeholder="Price"
+            autocomplete="off"
+            required
+            />
+            <span id="message-create-price" class="text-danger d-block"></span>
+          <!-- image url -->
+          <h4>Image url</h4>
+          <input
+            id="imageUrl"
+            type="text"
+            class="mb-1 form-control"
+            placeholder="Image url"
+            autocomplete="off"
+            required
+            />
+            <span id="message-create-url" class="text-danger d-block"></span>
+          <h4>Color</h4>
+          <input
+            id="color"
+            type="color"
+            class="mb-1 form-control"
+            placeholder="Image url"
+            autocomplete="off"
+            required
+            />
+            <span id="message-create" class="text-danger d-block"></span>
+    
+          </div>
+          <button id="add_btn" class="btn btn-outline-primary d-block ms-auto">Add</button>
+        </form>
+      <div id="list-group-todo" class="list_group">
+        
+      </div>
+
+          <!-- modal -->
+            <div id="modal" class="modal-todo hidden">
+              <div class="card">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center"
+                >
+                  <h5>Change This Todo</h5>
+                  <img id="close" src="img/close.svg" alt="" width="25" height="25" />
+                </div>
+                <div class="card-body">
+                  <form id="form-edit" class="mb-3">
+                    <div class="mb-3">
+                      <h5>Enter a new car name</h5>
+                      <input
+                        id="carNameEdit"
+                        type="text"
+                        class="mb-1 form-control"
+                        placeholder="Type Car name..."
+                        autocomplete="off"
+                      />
+                      <span id="message-edit" class="text-danger"></span>
+                      <h5>Enter a new speed</h5>
+                      <input
+                        id="speedEdit"
+                        type="number"
+                        class="mb-1 form-control"
+                        placeholder="Enter speed..."
+                        autocomplete="off"
+                      />
+                      <span id="message-edit-speed" class="text-danger"></span>
+                      <h5>Enter a new price</h5>
+                      <input
+                        id="priceEdit"
+                        type="number"
+                        class="mb-1 form-control"
+                        placeholder="Enter price..."
+                        autocomplete="off"
+                      />
+                      <span id="message-edit-price" class="text-danger"></span>
+                      <h5>Enter a new image url</h5>
+                      <input
+                        id="imageUrlEdit"
+                        type="text"
+                        class="mb-1 form-control"
+                        placeholder="Enter price..."
+                        autocomplete="off"
+                      />
+                      <span id="message-edit-url" class="text-danger"></span>
+                      <h5>Choose a new color</h5>
+                      <input
+                        id="colorEdit"
+                        type="color"
+                        class="mb-1 form-control"
+                        placeholder="Choose color..."
+                        autocomplete="off"
+                      />
+                      <span id="message-edit" class="text-danger"></span>
+                    </div>
+                    <button class="btn btn-outline-success d-block ms-auto">
+                      Save Changes
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+      
+          <div id="overlay" class="overlay hidden"></div>
+    </main>
+
+    <!-- SCRTIP -->
+    <!-- BOOSTRAP JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
