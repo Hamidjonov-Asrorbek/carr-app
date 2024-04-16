@@ -1,4 +1,4 @@
-const fullDay = document.getElementById('full-day');
+// const fullDay = document.getElementById('full-day');
 const modal = document.getElementById('modal');
 const overlay = document.getElementById('overlay');
 const title_time = document.getElementById('title_time');
